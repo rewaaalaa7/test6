@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+        color: white;
+}
+.background{
+    background-image: url(/images/312395760_648789680031176_8435825328079276964_n.jpg);
+    height: 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.overview{
+    display: flex;
+}
+
+.profile-page .info-box .box{
+    flex-wrap: wrap;
+    /* border-bottom: 1px solid #eee; */
+    transition: 0.3s;
+}
+.profile-page .info-box .box:hover{
+    font-size: 22px;
+    cursor: pointer;
+}
+.profile-page .info-box .box h4{
+    font-weight: normal;
+    
+}
+.profile-page .avatar-box{
+    padding: 20px;
+}
+.profile-page .avatar-box > img {
+    width: 120px;
+    height: 120px;
+}
+.profile-page .avatar-box h3{
+    padding: 4px;
+    letter-spacing: 2px;
+    font-size: 15px;
+}
+.overview{
+    padding: 30px;
+    position: absolute;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(4, 42, 80, 0.75);
+    width: auto;
+    border-radius: 10px;
+    color: white;
+}
+.box{
+    display: flex;
+    width: 70%;
+    font-size: 19px;
+    font-weight: 400;
+    color: white;
+}
+.box input[type="text"]:hover, .box input[type="password"]:hover{
+    cursor: pointer;
+}
+.box input[type="text"], .box input[type="password"]{
+    display: block;
+    margin: 5px auto;
+    text-align: center;
+    border: 1px solid rgb(23, 23, 60);
+    padding: 4px 10px;
+    width: 230px;
+    border-radius: 24px ;
+    transition: 0.25px;
+}
+.box input[type="text"], .box input[type="password"]:focus{
+    width: 230px;
+}
+.info-box{
+    margin: 40px;
+}
+#btn{
+    background: none;
+    display: block;
+    margin: 6px auto;
+    text-align: center;
+    border: 2px solid gold;
+    padding: 10px 10px;
+    outline: none;
+    color: white;
+    border-radius: 24px;
+    transition: 0.25px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 500;
+}
+#btn:hover{
+    background-color: gold;
+    width: 90px;
+}
+.edit{
+    font-size: 25px;
+    text-align: center;
+    border-bottom: 1px solid white;
+    padding: 12px;
+    width: 300px;
+}
+.av{
+    font-size: 20px;
+    font-weight: 500;
+}

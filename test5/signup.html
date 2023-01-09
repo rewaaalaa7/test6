@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Help Sign Up</title>
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <div class="background">
+        <div class="box" >
+            <h1> SIGN-UP</h1>
+            <input type="text"  placeholder=" First Name" id="fname" required>
+            <input type="text" placeholder="Last Name" id="sname" required>
+            <input type="text" placeholder="User-Name" id="uname" required>
+            <input type="text" placeholder="ID" id="id" required >
+            <input type="password" placeholder="Password" id="password"required>
+            <input type="password" placeholder="Re-Password" id="repassword" required>
+            <button id="btn"  > 
+                <a class="HomePageLink" onclick="validate2()"  id="linkHomePage" href="or.html"> Sign up </a>
+            </button>
+        </div>
+
+</div>
+
+    <script>
+
+        let password= document.getElementById("password");
+        let fname= document.getElementById("fname");
+        let sname= document.getElementById("sname");
+        let uname= document.getElementById("uname");
+        let email= document.getElementById("id");
+        let repassword= document.getElementById("repassword");
+
+        let linkHomePage=document.getElementById('linkHomePage');
+
+        function validname()
+        {
+            if (fname.value==0||sname.value==0||uname.value==0)
+            {  
+                alert("Name can't be blank");  
+                return false;
+            }
+            else
+            {
+                return true
+            }
+        }
+
+        function validpassword()
+        {    
+        if(password.value.length <6||password.value.length >=10)
+        {  
+            alert("Password must be at least 6 characters and less than 10");  
+            return false
+        }
+        else
+        {
+            return true; 
+        }
+        }
+
+        function validRepassword()
+        {
+            if(repassword.value!=password.value)
+            {
+                alert("Re-Password must be matched to Password");  
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+        function validId()
+        {
+            if(id.value==0)
+            {
+                alert("You must Enter Valid ID");  
+            }
+            else
+            {
+                return true;
+            }
+        }
+
+
+
+    function validate2()
+    {
+        if(validRepassword()==true&&validname()==true&&validpassword()==true&&validId()==true)
+        {
+            alert("login succesfully");
+            linkHomePage.setAttribute('href','or.html');
+        }
+
+    }
+
+
+    </script> 
+
+
+</body>
+</html>

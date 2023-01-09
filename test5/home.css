@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Roboto:ital,wght@0,300;0,400;0,500;1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Oswald', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+h1{
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: rgb(35, 35, 35);
+}
+
+span{
+    font-size: .7rem;
+    color: #757373;
+}
+
+h6{
+    font-size: 1,1rem;
+    color: rgb(24, 24, 49);
+}
+
+/* nav */
+
+/* nav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 8vw;
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, .1);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+}
+
+nav h1{
+    color: rgb(23, 23, 60);
+    width: 150px;
+    cursor: pointer;
+}
+
+nav .navigation ul{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center ;
+}
+nav .navigation ul li{
+    list-style: none;
+    margin-left: 30px;
+}
+
+nav .navigation ul li a {
+    text-decoration: none;
+    color: rgb(23, 23, 60);
+    font-size: 16px;
+    font-weight: 400;
+}
+nav .navigation ul li a:hover{
+    color: gold;
+} */
+.container-fluid > .navbar-brand{
+    font-size: 30px;
+    letter-spacing: 7px;
+    font-weight: 500;
+}
+.container{
+    width: 30%;
+    display: flex;
+    align-items: left;
+    justify-content: center;
+    padding: 0px 90px;
+    
+
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    border-radius: 60px;
+    padding: 10px 20px;
+
+}
+.search-bar input{
+    background: transparent;
+    flex: 1;
+    border-radius: 60px;
+    padding: 10px;
+    outline: none;
+    font-size: 20px;
+
+}
+::placeholder{
+    color: #959995;
+}
+.search-bar button img{
+    width: 23px;
+}
+.search-bar button{
+    border-radius: 50%;
+    width: 60px;
+    height: 60%;
+    background-color: #58629b;
+    cursor: pointer;
+    margin: auto 10px;
+}
+
+#home{
+    color: white;
+    background-image: linear-gradient(rgba(9,5,54,0.3), rgba(5,4,46,0.7)), url(images/317736806_1626029414481546_1964913059161351460_n.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#home h2{
+    font-size: 3rem ;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+}
+
+#home p{
+    font-size: 1rem ;
+    letter-spacing: 1px;
+    word-spacing: 1px;
+    width: 70%;
+    line-height: 30px;
+}
+
+#home a{
+    text-decoration: none;
+    font-size: 1rem;
+    padding: 20px 40px;
+    background-color: white;
+    font-weight: 700;
+    border-radius: 50px;
+}
+#home .buttons{
+    margin-top:50px ;
+}
+#home .yellow{
+    color: black;
+    background-color:  gold ; 
+}
+
+#home .white{
+    color: black;
+}
+#home a.yellow:hover{
+    background-color:  white;
+}
+#courses{
+    padding: 8vw 8vw 0 8vw;
+    text-align: center;
+}
+#course .course-box{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 1rem;
+    margin-top: 50px;
+}
+#course .courses{
+    text-align: start;
+    background: white;
+    height: 100%;
+}
+
+#course .courses img{
+    width: 100%;
+    height: 60%;
+    background-size: cover;
+    background-position: center;
+}
+#course .courses.details{
+    padding: 15px 15px 0 15px ;
+}
+.image{
+    height: 300px;
+    width: 400px;
+}
+table{
+    margin: 50px auto;
+    width: 80%;
+}
+td{
+    padding: 10px 5px;
+}
+#courses h1{
+    color: rgb(23, 23, 60);
+    /* background-color: rgb(23, 23, 60, .75); */
+    border-bottom: 2px solid #2b2828;
+    margin-bottom: 10px;
+    text-align: center;
+    width: 50%;
+    margin: auto 320px;;
+    border: 2px solid rgb(23, 23, 60);
+    background-color: gold;
+}
+#courses p{
+    margin: 23px;
+    font-size: 18px;
+    font-weight: 600;
+    color: rgb(23, 23, 60);
+}
+
+.details{
+    font-size: 35px;
+}
+.ds{
+    padding-bottom: 40px;
+}
+.ODE{
+    padding-top: 40px;
+}
+
+.child:hover{
+    transform: scale(.9);
+}

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-Help Log in</title>
+    <link rel="stylesheet" href="login.css">
+</head>
+<body>
+
+    <div class="background">
+    <!-- <div class="box">
+        <h1> LOG-IN FOR PROFESSORS</h1>
+
+        <form action="/home.html" id="form">
+        <input type="text" name="as" placeholder="Enter Your Email" id="email" required>
+        <input type="password" name="nahv" placeholder="Enter Your Password" id="password" required>
+        <button  id="btn" onclick="validate()"> 
+            <a class="link" id='link' href="/or.html">Log In</a>
+        </button> 
+
+        <div class="span"><span> or</span></div>
+        <p> Don't you have an account? </p>
+    </form>
+    <button id="btn">
+        <a class="link" href="signup.html" > Sign Up</a>
+        </button>
+    </div> -->
+
+</div>
+
+<div class="box2">
+    <h1> LOG-IN</h1>
+
+    <form action="/home.html" id="form">
+    <input type="text" name="as" placeholder="Enter Your ID" id="email" required>
+    <input type="password" name="nahv" placeholder="Enter Your Password" id="password" required>
+    <button  id="btn" onclick="validate()"> 
+        <a class="link" id='link' href="/or.html">Log In</a>
+    </button> 
+    <!-- <a class="link" href="home.html">Login</a> -->
+
+    <div class="span"><span> or</span></div>
+    <p> Don't you have an account? </p>
+</form>
+<button id="btn">
+    <a class="link" href="signup.html" > Sign Up</a>
+    </button>
+</div>
+
+
+
+<script>
+    function validate(){
+        var email= document.getElementById("email").value;
+        var password= document.getElementById("password").value;
+        let link=document.getElementById('link')
+        
+        if ( password==0 || email==0)
+        {  
+            alert("You have to fill all fields");  
+        }
+        else
+        {
+            link.setAttribute('href',"or.html")
+
+        }
+        
+            // else if(password.value.length <6){  
+            //     alert("Password must be at least 6 characters.");  
+            // }
+            // else if(password.value.length >=10){  
+            //     alert("Password must be less than 10 characters.");  
+            // }
+            // else{
+            //     alert("login succesfully")
+            // }
+    }
+
+
+    function validate(){
+        var id= document.getElementById("ID").value;
+        var password= document.getElementById("password").value;
+        let link=document.getElementById('link')
+        
+        if ( password==0 || id==0)
+        {  
+            alert("You have to fill all fields");  
+        }
+        else
+        {
+            link.setAttribute('href',"or.html")
+
+        }
+        
+            // else if(password.value.length <6){  
+            //     alert("Password must be at least 6 characters.");  
+            // }
+            // else if(password.value.length >=10){  
+            //     alert("Password must be less than 10 characters.");  
+            // }
+            // else{
+            //     alert("login succesfully")
+            // }
+    }
+
+    </script>
+</body>
+</html>
